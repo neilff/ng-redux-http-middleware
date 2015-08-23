@@ -1,0 +1,17 @@
+<html ng-app="demoApp">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>ng-redux-http</title>
+  </head>
+  <body>
+    <div ng-controller="DefaultController as ctrl">
+      <pre>{{ ctrl.httpState | json }}</pre>
+      <h1>ngRedux $http Middleware</h1>
+      <button ng-click="ctrl.makeRequest()">Request Resource</button>
+      <button ng-click="ctrl.noop()">noop</button>
+      <pre>{{ ctrl.resourceResult | json }}</pre>
+    </div>
+  </body>
+  <script src="/static/bundle.js"></script>
+</html>
